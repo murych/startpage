@@ -1,6 +1,6 @@
 body {
         overflow: hidden;
-        background-image: url("img/index.png");
+        background-image: url("images/index.png");
         background-repeat: no-repeat;
         background-size:100% 100%;
         background-attachment:fixed;
@@ -52,7 +52,7 @@ background-position: center top;
         transition: all .30s ease;
         vertical-align: top;
          border-radius: 1px;
-          opacity: 0.4
+          opacity: 0.8
 }
 
 
@@ -72,8 +72,8 @@ span {
 #clock, #greeting {
         text-align: center;
         width: 100%;
-        /*color: #0F0F0F;*/
-        color: grey;
+        color: #FFFFFF;
+        /*color: grey;*/
 }
 
 #clock {
@@ -133,7 +133,7 @@ a:hover {
     border-width: 1px;
     border-style: solid;
     outline: 0;
-    opacity: 0.4;
+    opacity: 0.8;
     transition: all 0.5s;
 color: rgba(0,0,0,0);
     border-color: lightgrey;
