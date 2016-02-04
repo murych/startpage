@@ -1,8 +1,8 @@
 startpage
 ====
 
-![example screenshot](/img/screenshots/2015-12-26-closed.png?raw=true)
-![example screenshot open](/img/screenshots/2015-12-26-open.png?raw=true)
+![example screenshot](/images/screenshots/2015-12-26-closed.png?raw=true)
+![example screenshot open](/images/screenshots/2015-12-26-open.png?raw=true)
 
 
 <br>

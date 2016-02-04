@@ -1,58 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>startpage</title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/configmenu.js"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <div id="bgimg"></div>
-        <div id="container">
-            <div id="cell">
-                <div class="sqr">
-                    <span>4chan</span>
-                    <div class="content">
-                        <a href="http://boards.4chan.org/a/">/a/</a><br>
-                        <a href="http://boards.4chan.org/jp/">/jp/</a><br>
-                        <a href="http://boards.4chan.org/w/">/w/</a><br>
-                        <a href="http://boards.4chan.org/ic/">/ic/</a><br>
-                        <a href="http://boards.4chan.org/g/">/g/</a><br>
-                        <a href="http://boards.4chan.org/vg/">/vg/</a>
-                    </div>
+
+<head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="fonts/font.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="clock">00:00 am</div>
+    <div id="greeting">greeting</div>
+    <section class="searchContainer">
+        <!-- <form class="searchForm" method="get" action="https://google.com/search">
+                <input class="searchBar search_google" type="text" name="q" placeholder="Google" search_/>
+            </form> -->
+        <form class="searchForm" method="get" action="https://duckduckgo.com/?q=%s">
+            <input class="searchBar search_duck" type="text" name="q" placeholder="DuckDuckGo" search_/>
+        </form>
+        <form class="searchForm" method="get" action="https://youtube.com/results">
+            <input class="searchBar search_youtube" type="text" name="search_query" placeholder="Youtube" search_/>
+        </form>
+        <form class="searchForm" method="get" action="https://ru.wikipedia.org/w/index.php">
+            <input class="searchBar search_wikipedia" type="text" name="search" placeholder="Wikipedia" search_/>
+        </form>
+    </section>
+    <div id="container">
+        <div id="cell">
+            <div class="sqr">
+                <span>Social</span>
+                <div class="content">
+                    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Google Mail</a>
+                    <br>
+                    <a href="https://us-mg6.mail.yahoo.com/neo/launch?.rand=b2ntfks1tplge">Yahoo Mail</a>
+                    <br>
+                    <a href="https://dub130.mail.live.com/default.aspx">Outlook</a>
+                    <br>
+                    <a href="https://vk.com/">Vk</a>
+                    <br>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <br>
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+                    <br>
+                    <a href="https://www.flickr.com/">Flickr</a>
                 </div>
-                <div class="sqr"> <span>images</span>
-                    <div class="content">
-                        <a href="http://danbooru.donmai.us/">danbooru</a><br>
-                        <a href="http://www.konachan.com">konachan</a><br>
-                        <a href="http://yande.re/">yande.re</a><br>
-                        <a href="http://vector.booru.org/">vectorbooru</a><br>
-                        <a href="http://zerochan.net/">zerochan</a><br>
-                        <a href="http://www.pixiv.net/">pixiv</a>
-                    </div>
+            </div>
+            <div class="sqr">
+                <span>Tech</span>
+                <div class="content">
+                    <a href="https://github.com/">Github</a>
+                    <br>
+                    <a href="https://bitbucket.org">Bitbucket</a>
+                    <br>
+                    <a href="http://stackoverflow.com/">StackOverFlow</a>
+                    <br>
+                    <a href="https://gist.github.com/">Gist</a>
+                    <br>
+                    <a href="http://pastebin.com">Pastebin</a>
+                    <br>
+                    <a href="https://sourceforge.net/">Sourcefourge</a>
+                    <br>
+                    <a href="https://app.astralapp.com/dashboard">AstralApp</a>
                 </div>
-                <div class="sqr">
-                    <span>anime</span>
-                    <div class="content">
-                        <a href="http://horriblesubs.info/">horriblesubs</a><br>
-                        <a href="http://myanimelist.net/">myanimelist</a><br>
-                        <a href="http://anichart.net/">anichart</a><br>
-                        <a href="http://anidb.net/">anidb</a><br>
-                        <a href="http://nyaa.se/">nyaa.se</a><br>
-                        <a href="http://bakabt.me/">bakabt</a>
-                    </div>
+            </div>
+            <div class="sqr">
+                <span>Education</span>
+                <div class="content">
+                    <a href='https://ru.wikipedia.org'>Wikipedia</a>
+                    <br>
+                    <a href="https://getpocket.com/a/queue/list/">Pocket</a>
+                    <br>
+                    <a href='https://translate.google.com'>Translate</a>
+                    <br>
+                    <a href="http://www.wolframalpha.com/">Wolphram</a>
+                    <br>
+                    <a href="https://stepic.org/">Stepic</a>
+                    <br>
+                    <a href="https://www.coursera.org/">Coursera</a>
+                    <br>
+                    <a href="http://www.intuit.ru/intuituser/userpage/">Intuit</a>
                 </div>
-                <div class="sqr" id="search_sqr">
-                    <span>search</span>
-                    <div class="content">
-                        <input id="searchinput" type="text" autocomplete="off">
-                    </div>
+            </div>
+            <div class="sqr">
+                <span>Entertainment</span>
+                <div class="content">
+                    <a href="https://youtube.com/">Youtube</a>
+                    <br>
+                    <a href="https://music.yandex.ru/">Yandex Music</a>
+                    <br>
+                    <a href="http://www.e-reading.mobi/">E-Reading</a>
+                    <br>
+                    <!--                        <a href="http://store.steampowered.com/">Steam</a><br>-->
+                    <!--                        <a href="https://www.humblebundle.com/">Humble Bundle</a><br>-->
+                    <!--                        <a href="http://www.gog.com/">Gog</a><br>-->
+                    <!--                        <a href="http://www.last.fm/user/Nuparu1997/">Last.fm</a><br>-->
+                    <a href="http://pdmhcore.ru/">PDMHcore</a>
+                    <br>
+                </div>
+            </div>
+            <div class="sqr">
+                <span>Misc.</span>
+                <div class="content">
+                    <a href="https://google.com">Google</a>
+                    <br>
+                    <a href="https://yandex.ru">Yandex</a>
+                    <br>
+                    <a href="https://www.google.com/maps">Google Maps</a>
+                    <br>
+                    <a href="https://maps.yandex.ru/10731/istra/">Yandex Maps</a>
+                    <br>
+                    <a href="https://rasp.yandex.ru/">Yandex Rasp</a>
+                    <br>
+                    <a href="https://www.dropbox.com/home">Dropbox</a>
+                    <br>
+                    <a href="https://onedrive.live.com/">OneDrive</a>
+                    <br>
                 </div>
             </div>
         </div>
-        <div id="popup"></div>
-    </body>
+    </div>
+</body>
+
 </html>

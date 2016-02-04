@@ -1,36 +1,37 @@
 {
     "bool": {
         "borders":              true,
+        "simplesearch":         false,
         "alwaysopen":           false,
-        "mascot":               false,
-        "allowVersionCheck":    true,
-        "privateMode":          false
+        "mascot":               false
     },
-    
+
     "style": {
-        "heading_font":         "tewi",
-        "link_font":            "tewi",
-        "heading_font_size":    "10px",
-        "link_font_size":       "10px",
-        "background":           "#19191b",
-        "foreground":           "#121212",
-        "heading_color":        "#8d2036",
-        "link_color":           "#aaaaaa",
-        "border_color":         "#8d2036",
-        "border_width_normal":  "0",
-        "border_width_hovered": "2px 0",
-        "search_color":         "#aaaaaa",
-        "search_bg_color":      "rgba(110,110,110,0.1)"
+        "heading_font":         "Ubuntu",
+        "link_font":            "Ubuntu",
+        "heading_font_size":    "16px",
+        "link_font_size":       "12px",
+        "background":           "#090909",
+        "foreground":           "#2a2a2a",
+        "heading_color":        "#F1F1F1",
+        "link_color":           "#ffffff",
+        "border_color":         "#ffffff",
+        "border_width":         "0px",
+        "search_color":         "#cacaca",
+        "search_bg_color":      "#2a2a2a",
+        "link_hover_color":     "#000000"
     },
-    
+
     "ext": {
-        "images":[              "image1.png",
-                                "image2.png",
-                                "image3.png"],
+        "ref":                  "file://",
         "bottom":               "0",
         "right":                "0",
         "height":               "500px",
         "width":                "400px",
         "opacity":              ".2"
-    }
+    },
+
+        "clock": {
+                "hour_format":                        "24"
+        }
 }
